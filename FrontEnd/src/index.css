@@ -1,0 +1,215 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import "tailwindcss";
+@font-face {
+  font-family: 'BankGothic';
+  src: url("./assets/Fonts/BankGothicLightRegular.otf") format('opentype');
+  font-style: normal;
+  font-display: swap;
+} 
+@font-face {
+  font-family: 'Poppins';
+  src: url("./assets/Fonts/Poppins-Regular.ttf") format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+@theme{
+  --font-BankGothic: 'BankGothic';
+}
+@theme{
+  --font-Poppins: 'Poppins';
+}
+body{
+  background: #FFFFFF;
+  font-family: Poppins;
+  overflow-x: hidden;
+  background: radial-gradient(circle at top, #ffffff 0%, #e8ebf7 120%);
+}
+#logo_sphere::after{
+  
+  content: "";
+  display: inline-block;
+  height: 497px;
+  width: 2px;
+  background-color: #ff0000;
+  margin-left: 23%;
+  vertical-align: middle;
+
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 30%;
+  border: 2px solid #843ff2;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+input[type="checkbox"]:checked {
+  background-color:  #9647e0;/* Cor roxa quando marcado */
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
+  content: "";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%)
+}
+.Hlink_header{
+   @apply text-[#5B5B5B];
+   @apply text-base;
+   @apply gap-x-[30%];
+}
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+
+  background-attachment: fixed;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #930eb5, #3b82f6); /* roxo semi-transparente */
+  border-radius: 10px;
+  border: 3px solid transparent; /* dá um espaçamento bonito */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(59, 130, 246, 0.8); /* azul semi-transparente no hover */
+}
+html{
+  transition: 1s ease-in-out;
+}
+/* Estilo padrão e modo escuro */
+html.dark{
+  background-color: #222222d0;
+  transition: 1s ease-in-out;
+}
+.fixedheader{
+  background-color: #222222d0;
+  transition: 1s ease-in-out;
+}
+.notfixedheader{
+  background-color: white;
+  transition: 1s ease-in-out;
+}
+html.dark body{
+   background: #222222d0;
+   transition: 1s ease-in-out;
+}
+html, body {
+  transition: background-color 1 ease, color 1 ease;
+   
+}
+.dark{
+color: white;
+}
+html.dark button{
+color: #FFFFFF;
+}
+html.dark .aboutus{
+  color: #FFFFFF;
+}
+html.dark h1{
+  color: #ffffff;
+}
+html.dark p{
+  color: #ffffffbb;
+}
+html.dark a{
+ color: #ffffffbb;
+}
+html.dark header a{
+   color: #ffffff;
+}
+html.dark header button{
+  color: #ffffffbb;
+}
+html.dark .videoBack{
+  filter: invert(90%);
+}
+html.dark .homeback{
+  background: linear-gradient(to bottom, #f65cf1dc, #6366f1, #2A2A2A);
+  transition: 1s;
+}
+html.dark .videoAbout{
+  border: 20px solid #2A2A2A;
+}
+html.dark .dashbo{
+  box-shadow: 1px 1px 15px 2px white;
+}
+html.dark .dashback{
+  filter: invert(15%);
+}
+html.dark .curv{
+  background-color: #2A2A2A;
+}
+html.dark .MeusEventos{
+  filter: brightness(70);
+}
+html.dark .menu-public{
+  filter: invert(20%);
+}
+html.dark .dropdown-public{
+  background-color: #2A2A2A;
+}
+html.dark .menu-links-public{
+  color: black;
+}
+html.dark .dropdown-private{
+  background-color: #2A2A2A;
+}
+html.dark .menu-links-private{
+  color: black;
+}
+html.dark .menu-private{
+  filter: invert(10%);
+}
+html.dark .userStatus{
+  background-color: #282828;
+}
+html.dark .statusBar{
+  background-color: #404040;
+}
+/* Estilo padrão do body */
+body {
+  background: radial-gradient(circle at top, #ffffff 0%, #e8ebf7 120%);
+  font-family: var(--font-Poppins), sans-serif;
+  overflow-x: hidden;
+  transition:0.9s ease-in-out;
+}
+
+/* Logo sphere após elemento */
+#logo_sphere::after {
+  content: "";
+  display: inline-block;
+  height: 497px; /* Parece exagerado, revise se não seria 47px */
+  width: 2px;
+  background-color: #ff0000;
+  margin-left: 23%;
+  vertical-align: middle;
+}
+
+/* Links de navegação no header */
+.Hlink_header {
+  @apply text-[#5B5B5B];
+  @apply text-base;
+  @apply gap-x-[30%];
+}

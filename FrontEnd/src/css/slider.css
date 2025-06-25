@@ -1,0 +1,25 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  position: absolute;
+}
+
+.swiper-button-prev {
+  left: -40px; /* ou -60px se quiser mais longe */
+}
+
+.swiper-button-next {
+  right: -40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
